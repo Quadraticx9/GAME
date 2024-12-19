@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Shadow_Fury</title>
+  <link
+    rel="icon"
+    href="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEV%2ByGZKLUZhajLY6ZRJunyZBxhcGFpSDb32VfeI0QvE9wkGy8%2Fo79PH4y6MRv%2FtHaFTwrSVC0%2FCwWHRodgFiwPwYX2cIfLHDlKc03crQ%2FSVsh27ez9zzPfSOsD17vaEGJ6JSRqT0aQ5fcWsisAD6M1eDcGkukcIvxTHf2x3d6yvW7%2F7b1uMnBwdjfr0G%2FolrYJKOESj6IssV%2FYUhGYmaX2up7FI7k8q1ZUDSk0j%2FcF2DAyIDr3PrsaxXNWR02pnhbV7u4%2Bancjg2CD9wQaxyNy%2FPv5bXeoaqrQsYTSf2HNlhMImsnUkBMxHhFV9QtQgG6ZFx2cKiDD9KTxsL5XPxkiGEsDhyNAOkayOpCDYmmeO%2F3aIudQLzvwLVe%2B3cyObMRdhQy8Lz3qGe4VSfO7rtLDN8coDDb7zTnZtJuvqWq306Nufy1ZKcmLwj2u647ulQJANZiXkmCn31haUQPrdAhI4w3OxuCQC4SIN76%2BlHxIJsUvJXXcE5T7Mcwn1K9IXOJbfIQPDhjSJAYcGUz7PaN%2Bvcm%2FmJkXZJzJL2xTLBXdZhrmRXfsOUhdkt1tuBYo9fRtClkzZfH2%2BsYJWmBIVvJvGqA0aOkD9Bf4bh5ns7CipCvRHDMk3MYXDLv0pD9Cd5vtgn8ek5tvHpuoEFTNENlk2GpxIF3Bbp3c%3D&sz=w512"
+    type="image/x-icon"
+  />
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+        background-image: url("adfa.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        height: 100%;
+        font-family: Arial, sans-serif;
+      }
+
+      #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url("adfa.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #title h1 {
+        font-size: 4rem;
+        color: #ff0000;
+        text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+        margin-bottom: 50px;
+        animation: pulse 1.5s infinite alternate;
+      }
+
+      .menu-btn {
+        background: rgba(0, 0, 0, 0.7);
+        border: 2px solid #ff0000;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        margin: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .menu-btn:hover {
+        background-color: #ff0000;
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+      }
+
+      #footer {
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        font-size: 1rem;
+        color: #000000;
+      }
+
+      @keyframes pulse {
+        0% {
+          text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+        }
+        100% {
+          text-shadow: 2px 2px 20px rgba(255, 0, 0, 1);
+        }
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow Fury - Main Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div></div>
+
+      <div id="title">
+        <h1>Shadow Fury: Rise of the Warriors</h1>
+      </div>
+
+      <div id="menu">
+        <a class="menu-btn" id="play-btn" href="Main_bt.html">Start Battle</a>
+        <a class="menu-btn" id="characters-btn" href="Champion.html">
+          Choose Your Champion
+        </a>
+        <a class="menu-btn" id="shop-btn">Game Control</a>
+      </div>
+
+      <div id="footer">
+        <p>&copy; 2024 Shadow Fury Games</p>
+      </div>
+    </div>
+  </body>
+</html>
